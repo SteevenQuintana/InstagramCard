@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Roboto:wght@100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+  position: relative;
+  background-color: #fcfcfc;
+  width: 527px;
+  height: 639px;
+  border: 2px solid #dedede;
+  border-radius: 5px;
+}
+
+.header {
+  color: rgba(0, 0, 0, 1);
+  display: flex;
+  align-items: center;
+  padding: 15px 25px 15px 25px;
+}
+
+.user-image img {
+  position: relative;
+  margin-right: 25px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-information h3 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.user-information span {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.4) !important;
+}
+
+.interaction-btns {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 15px 25px 15px 25px;
+}
+
+.interaction-btns svg {
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+.interaction-btns .like path {
+  fill: #ed4956;
+  stroke: #ed4956;
+}
+
+.post {
+  padding: 0px 25px 15px 25px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  position: relative;
+}
+
+.add-comment {
+  display: flex;
+  width: 90%;
+  position: absolute;
+  top: 90%;
+  padding: 0px 25px 15px 25px;
+  border-radius: 5px;
+}
+
+.add-comment input {
+  background-color: rgba(241, 241, 241, 1);
+  padding: 15px 20px 15px;
+  height: 15px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+.add-comment .button {
+  color: rgba(61, 138, 255, 1);
+  width: fit-content;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  text-align: right;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+}
