@@ -63,6 +63,7 @@ body {
 .interaction-btns svg {
   cursor: pointer;
   margin-right: 12px;
+  position: relative;
 }
 
 .interaction-btns .like path {
@@ -70,12 +71,34 @@ body {
   stroke: #ed4956;
 }
 
-.post {
-  padding: 0px 25px 15px 25px;
+@keyframes heartMove {
+  0% {
+    transform: scale(1.1);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.interaction-btns .like {
+  animation-name: heartMove;
+  animation-duration: 0.2s;
+}
+
+.post,
+.first-comment {
+  padding: 0px 25px 10px 25px;
   font-size: 12px;
   font-weight: 400;
   line-height: 15px;
   position: relative;
+}
+
+.comments {
+  height: 90px;
 }
 
 .add-comment {
