@@ -1,5 +1,6 @@
 let heart = document.querySelector(".dislike");
-heart.addEventListener("click", () => {
+heart.addEventListener("click", (event) => {
+  event.preventDefault();
   heart.classList.toggle("like");
 });
 
