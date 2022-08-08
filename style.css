@@ -20,6 +20,7 @@ body {
   width: 527px;
   height: 639px;
   border: 2px solid #dedede;
+  max-width: 98%;
   border-radius: 5px;
 }
 
