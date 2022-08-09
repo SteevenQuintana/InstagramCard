@@ -91,7 +91,7 @@ body {
 }
 
 .post,
-.first-comment {
+.comment {
   padding: 0px 25px 10px 25px;
   font-size: 12px;
   font-weight: 400;
@@ -100,7 +100,10 @@ body {
 }
 
 .comments {
-  height: 90px;
+  overflow-y: auto;
+  overflow-clip-margin: inherit;
+  max-height: 110px;
+  margin-right: 20px;
 }
 
 .add-comment {

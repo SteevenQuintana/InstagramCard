@@ -11,12 +11,13 @@ form.addEventListener("submit", (event) => {
   const comment = document.querySelector(".text").value;
   if (comment) {
     const html = `
-    <div class="first-comment">
+    <div class="comment">
       <strong> Comment </strong>
       <span> ${comment}</span>
     </div>`;
     newComment.insertAdjacentHTML("beforebegin", html);
     document.querySelector(".text").value = "";
+    newComment.scrollIntoView();
   }
 });
 
